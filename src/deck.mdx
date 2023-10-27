@@ -1,0 +1,630 @@
+export { default as theme } from "./components/Theme";
+import Layout from "./components/Layout";
+import Footnote from "./components/Footnote";
+import Progress from "./components/Progress";
+import SlideTitle from "./components/SlideTitle";
+import Icon from "./components/Icon";
+import Font from "./components/Font";
+import {
+ BLUE,
+  RED,
+  YELLOW,
+  GREEN,
+  PINK,
+  DARK_BLUE,
+  DARK_RED,
+  DARK_YELLOW,
+  DARK_GREEN,
+  DARK_PINK,
+  LIGHT_GREY,
+  DARK_GREY,
+  GREY,
+  BLACK,
+  WHITE
+} from "./components/Colours.js";
+
+import BG1 from "./images/bg1.jpg";
+import BG2 from "./images/bg2.jpg";
+
+import Brett from "./images/brett.jpg";
+
+import SlideJourney from "./images/slide-journey.svg";
+import SlideAreas from "./images/slide-areas.svg";
+import SlideMarket from "./images/slide-market.svg";
+import SlideComponents from "./images/slide-components.svg";
+import CAT from "./images/climate-action-tech.png";
+import CatJourney from "./images/cat-journey.png";
+import Lighthouse from "./images/lighthouse.png";
+import W3C from "./images/w3c.png";
+import WebsiteCarbon from "./images/websitecarbon.png";
+import ElectricityMaps from "./images/electricity-maps.png";
+
+<Footer>
+
+<Progress />
+
+</Footer>
+
+<Layout color={DARK_GREY}>
+
+| Key                                | Description           |
+| ---------------------------------- | --------------------- |
+| Left Arrow, Page Up, Shift + Space | Go to previous slide  |
+| Right Arrow, Page Down, Space      | Go to next slide      |
+| Option + P                         | Toggle Presenter Mode |
+| Option + O                         | Toggle Overview Mode  |
+| Option + G                         | Toggle Grid Mode      |
+
+[This presentation on github](https://github.com/tackaberry/cncf-cloud-sustainability)
+
+</Layout>
+
+---
+
+<Layout color={DARK_GREY}>
+
+# Cloud Sustainability: A Practical Guide for Building a More Sustainable Internet 
+
+### For CNCF Ottawa
+
+### November 2, 2023
+
+## Brett Tackaberry, Principal Architect, Google Cloud Canada
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE}>
+
+<Split>
+
+<Image src={Brett} style={{ height: "600px", width: "600px" }} />
+
+
+# About me 
+
+help people do awesome things with technology
+
+help companies grow, help teams do better
+
+use technology make the world a better place
+
+</Split>
+
+</Layout>
+
+---
+
+<Layout image={SlideJourney} >
+
+<SlideTitle>My Journey</SlideTitle>
+
+</Layout>
+
+
+<Notes>
+
+This talk is secretly an introduction to a part of me that I want to continue to explore and grow.  The context to this is important because these guidelines aren’t the whole story. 
+
+</Notes>
+
+---
+
+<Layout color={BLACK} image={BG2} >
+
+# Context
+
+</Layout>
+
+---
+
+<Layout color={GREEN} >
+
+# The Climate Context
+
+## <Icon name="looks_one" /> 1.5 ºC
+
+</Layout>
+
+<Notes>
+
+The Paris agreement gave us the threshold to restrict global warming to no more than 1.5 degrees Celsius to mitigate the worst impacts of climate change
+
+</Notes>
+
+
+---
+
+
+<Layout color={BLUE} >
+
+# The Climate Context
+
+## <Icon name="looks_two" /> Emissions growth
+
+</Layout>
+
+<Notes>
+
+The digital industry is responsible for between 2 and 5 % of global emissions	
+
+</Notes>
+
+
+---
+
+
+<Layout color={RED} >
+
+# The Climate Context
+
+## <Icon name="looks_3" /> Carbon Footprint of ICT
+
+</Layout>
+
+<Notes>
+
+If the internet were a country it would be one of the top 5 polluters.
+
+</Notes>
+
+---
+
+
+<Layout color={DARK_YELLOW} >
+
+# The Climate Context
+
+## <Icon name="looks_4" /> Continued Growth 
+
+</Layout>
+
+<Notes>
+
+Since 2010, the number of internet users has more than doubled. Global traffic has increased by 25 times. 
+
+</Notes>
+
+---
+
+
+<Layout color={DARK_PINK} >
+
+# The Climate Context
+
+## <Icon name="looks_5" /> More Content
+
+</Layout>
+
+<Notes>
+
+And what’s more, page size more than doubled in some cases. 
+
+</Notes>
+
+---
+
+<Layout color={BLACK} image={BG1} >
+
+# Our Story
+
+</Layout>
+
+<Notes>
+
+My journey to understanding how I can be a positive force for our world has lead me here, working on how to make the internet and IT more sustainable.  But it isn’t my, or our, whole job - it’s a fundamental part - like security, or performance, or openess might be.  So, onwards. 
+
+</Notes>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# Architecture decisions we make
+# have an <Font color={YELLOW}>impact</Font>
+# on our environment
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# There are things that 
+# <Font color={YELLOW}>software engineers</Font>
+# can do to help
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# There are things that 
+# <Font color={YELLOW}>designers</Font>
+# can do to help
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# There are things that 
+# <Font color={YELLOW}>product owners</Font>
+# can do to help
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# There are things that 
+# <Font color={YELLOW}>you</Font>
+# can do to help
+
+</Layout>
+
+---
+
+<Layout color={DARK_BLUE} >
+
+# Green Software principles
+
+- *Energy Efficiency*: Consume the least amount of electricity possible
+- *Hardware Efficiency*: Use the least amount of embodied carbon possible
+- *Carbon Awareness*: Do more when the electricity is clean and less when it’s dirty
+
+</Layout>
+
+---
+
+<Layout>
+
+# 1. Use the cloud
+
+## Carbon intensity of cloud is 3x lower than on-prem
+
+<Footnote>
+
+(Siddik, Shabi, Marston “The environmental footprint of data centers in the United States” (2021))[https://vtechworks.lib.vt.edu/bitstream/handle/10919/109747/Siddik_2021_Environ._Res._Lett._16_064017.pdf]
+
+</Footnote>
+
+</Layout>
+
+---
+
+<Layout>
+
+# 2. Choose a region for low-carbon energy and proximity to your users
+
+<Image src={ElectricityMaps} style={{ height: "600px", width: "1200px" }} />
+
+<Footnote>
+
+https://app.electricitymaps.com/map
+
+</Footnote>
+
+</Layout>
+
+<Notes>
+
+Low-carbon energy means: clean (no emissions like nuclear), green (natural sources like hydro), renewable (solar, wind)
+
+</Notes>
+
+---
+
+<Layout>
+
+# 3. Optimize for energy efficiency
+
+- the more you use a computer, the more efficient it becomes
+- an idle server has a carbon cost from both embedded carbon as well as inefficient utilization
+
+</Layout>
+
+---
+
+<Layout>
+
+# 4. eBPF and KEPLER FTW
+
+- eBPF, Cilium - used with K8s - brings control and observability enhancing security, performance, and networking
+- KEPLER - Kubernetes Energy Performance Label for Efficiency in Research - a tool to measure and optimize energy efficiency of Kubernetes clusters
+- Cloud Native Computing Foundation sandbox project
+
+<Notes>
+
+KEPLER - using CPU performance counters and machine learning (ML) models to estimate power consumption of workloads running on Kubernetes clusters.
+
+Kepler leverages eBPF programs to probe per-container energy consumption related to system counters and exports them as metrics. T
+
+https://sustainable-computing.io/
+
+</Notes>
+
+
+</Layout>
+
+---
+
+<Layout>
+
+# W3C Web Sustainability Guidelines
+
+</Layout>
+
+<Notes>
+
+Let's zoom back in a little bit and talk about some practical ways your work can have a positive impact on the environment.
+
+Let's talk about the W3C Web Sustainability Guidelines.
+
+
+</Notes>
+
+---
+
+<Layout>
+
+### W3C launched Draft 1.0 of the Web Sustainability Guidelines in September 2023.
+
+</Layout>
+
+<Notes>
+
+The Web Sustainability Guidelines (WSG) 1.0 explains how to design and implement digital products and services that put people and the planet first. The guidelines are best practices based on measurable, evidence-based research; aimed at end-users, web workers, stakeholders, tool authors, educators, and policymakers.
+
+</Notes>
+
+---
+
+<Layout>
+
+# Who is the W3C?
+
+The World Wide Web Consortium (W3C) develops standards and guidelines to help everyone build a web based on the principles of accessibility, internationalization, privacy and security.
+
+</Layout>
+
+<Notes>
+
+I would hazard a guess most of you are at least aware of W3C or the world wide web consortium.  Not to diminish all their other work, but their Web Content Accessibility Guidelines are referenced all over the world.  The public sector team will know them well as all digital public services need to be WCAG compliant thru federal, provincial, and municipal regulations. Google has clear policies and tooling for accessibility, based on WCAG. 
+
+</Notes>
+
+---
+
+<Layout light image={SlideAreas}>
+
+<SlideTitle>Areas</SlideTitle>
+
+</Layout>
+
+<Notes>
+
+The guidelines are great in a way that highlight a holistic view of concerns including more than just co2 - environmental impact is much more
+
+- they address power on both server and client
+e -waste - again both server and client
+Water, as it pertains to cooling, is an important concern
+Digital and digital transformation as a way to eliminate need for Paper and printing
+And also carbon traps - like you and me - and all the other factors that go in to producing digital products
+
+
+</Notes>
+
+---
+
+<Layout light image={SlideMarket} >
+
+<SlideTitle>Audience</SlideTitle>
+
+
+</Layout>
+
+<Notes>
+
+
+The guidelines were written with specific audiences in mind:
+
+
+They’re very practically useful for people in the industry. These people are us, and our customers.
+
+But our work and our customers work, will, in-turn raise awareness. 
+
+But we have to be mindful that standards will create basis for regulations. We saw it with WCAG and accessibility laws. As orgs build compliance to laws, we see it propagate into procurement policies.  Unlike accessibility, which ended up really having no teeth outside govt, I think we’re going to see sustainability-laws be a lot more stringent and impactful on the private sector. We know already sustainability is extremely important to our customers - perhaps lead in this case by private sector - they’re all going to get hit with sustainability laws.  Manufacturing, CPG, shipping laws all aside - we’re already seeing digital and IT sustainability laws emerge.
+
+</Notes>
+
+---
+
+<Layout >
+
+# Four categories
+
+- **User experience design**: Research and ideation, journey design, content and assets, and quality assurance.
+- **Web development**: Development sustainability, code optimization, coherence, and security.
+- **Hosting, Infrastructure, and Systems**: Environment commissioning, minimizing environment and data, and minimizing human disruption.
+- **Business Strategy and Product Management**: Reporting, disclosure, strategy, and policies from both an organizational and website and product level.
+
+</Layout>
+
+<Notes>
+
+Let’s have a closer look at the guidelines. 
+
+They’re broken down into 4 categories:
+User experience design
+WEb development
+Hosting, Infrastructure, and Systems
+Business Strategy and Product Management
+
+I’ll go a little deeper into each one in just a minute. 
+
+</Notes>
+
+---
+
+<Layout >
+
+# Stats
+
+- 94 Guidelines
+- 232 Success Criteria
+- many more resources and examples
+
+</Layout>
+
+---
+
+<Layout light image={SlideComponents} >
+
+<SlideTitle>Components</SlideTitle>
+
+</Layout>
+
+<Notes>
+
+A guideline would read: Enable asynchronous processing and communication. 
+
+And this guideline has 2 success criteria:  Use batch processing, and perhaps run when power consumption would be at lower carbon-intensity- running in a predictable pattern keeps utilization optimized, reduces thrashing- avoids user-impact of slow downs and outages; and the second criterion is protocol usage - using more efficient, secure privacy -aware routes 
+
+Theres Impact, Effort, benefits. GRI reporting alignment.  Examples and resources. 
+
+On the reporting, GRI is the main, if not one of a few, global reporting standards for ESG metrics.  By aligning these standards with a global standard, organizations can use digital product reporting to roll up to org-level reporting.  And have real meaningful impact through aligning with these guidelines. 
+
+</Notes>
+
+
+---
+
+<Layout color={DARK_BLUE}>
+
+# User Experience and Design
+
+## Research and ideation, journey design, content and assets, and quality assurance.
+
+- Research, consult, assess thoughtfully  and consider sustainability in early ideation
+- Build automated value regression testing into the solution
+- If you’re building apps or tools, there are a lot of guidelines for content and design considerations
+
+</Layout>
+
+<Notes>
+
+Example: 2.26 Analyze The Performance Of The Visitor Journey
+…ethically measure how efficient a visitor's experience is, … and reduce the energy burden of loading unnecessary page … only collect the data required to provide a streamlined and effective user-journey
+
+</Notes>
+
+---
+
+<Layout color={DARK_GREEN}>
+
+# Web Development
+
+## Development sustainability, code optimization, coherence, and security.
+
+- Mostly speaks to client-side technologies, empowering customers to build and test with technologies like Lighthouse would be valuable
+- Building performance and sustainability testing into CI/CD, and operationalizing performance measurement
+- Building for security 
+
+https://bundlephobia.com/
+
+https://pkg-size.dev/
+
+</Layout>
+
+<Notes>
+
+Example: 3.17 Manage Dependencies Appropriately
+…JavaScript … can cause very high emissions in terms of CPU load due to the rendering process…  check for unused dependencies,  keep dependencies up to date
+
+
+</Notes>
+
+
+---
+
+<Layout color={DARK_YELLOW}>
+
+# Hosting, Infrastructure, and Systems
+
+## Environment commissioning, minimizing environment and data, and minimizing human disruption.
+
+- Rightsizing, automation, batch processing
+- Sustainable data practices, only keeping what’s needed
+- Minimize transfer, use edge computing
+- Async processing and computing
+- Being carbon aware
+
+</Layout>
+
+<Notes>
+
+Example: 4.5 Limit Usage Of Additional Environments
+Decommission or switch off additional environments, such as testing, staging
+
+</Notes>
+
+---
+
+<Layout color={DARK_RED}>
+
+# Business Strategy and Product Management
+
+## Reporting, disclosure, strategy, and policies from both an organizational and website and product level.
+
+- Speaks to the business of building and operating a digital product
+- Setting org-level sustainability goals
+- Implementing sustainability onboarding training or guidelines
+- Use open-source software
+
+</Layout>
+
+<Notes>
+
+Example: Set Sustainability Goals
+
+Example: 5.5 Estimate A Product Or Service's Environmental Impact
+Conduct a full life-cycle Analysis (LCA) based on the functional unit (ex. per workload, per API call, per user)
+Software Carbon Intensity considers power consumed (server and client) plus embedded carbon 
+
+</Notes>
+
+---
+
+<Layout light color={WHITE}>
+
+<Split>
+
+<Image src={CAT} style={{ height: "600px", width: "600px" }} />
+
+
+# ClimateAction.tech 
+
+A community of practice of tech workers that provides support and guidance for systemic change in our organisations and industries, to face the climate crisis.
+
+</Split>
+
+</Layout>
+
+---
+
+<Layout color="BLACK">
+
+# Thank you 🙏
+
+- https://www.linkedin.com/in/tackaberry/
+
+- https://github.com/tackaberry
+
+- [This Presentation](https://cncf-cloud-sustainability.tackaberry.dev/)
+
+</Layout>

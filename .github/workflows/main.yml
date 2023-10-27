@@ -1,0 +1,34 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - id: 'checkout'
+      uses: 'actions/checkout@v3'
+
+    - id: 'auth'
+      uses: 'google-github-actions/auth@v1'
+      with:
+        credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
+    
+    - id: 'install'
+      name: Install dependencies
+      run: yarn install --frozen-lockfile
+
+    - id: 'build'
+      name: Build Development
+      run: yarn build
+      
+    - id: 'upload'
+      uses: 'google-github-actions/upload-cloud-storage@v1'
+      with:
+        path: 'public'
+        destination: 'cncf-cloud-sustainability'
+        parent: false
+
+    - id: 'invalidate'
+      name: 'Invalidate CDN'
+      run: gcloud compute url-maps invalidate-cdn-cache tackaberry-dev --async --path "/*"
+
+                  

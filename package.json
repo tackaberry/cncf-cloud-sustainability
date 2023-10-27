@@ -1,0 +1,18 @@
+{
+  "name": "presentation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "deck.mdx",
+  "scripts": {
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && mdx-deck ./src/deck.mdx",
+    "build": "mdx-deck build ./src/deck.mdx && cp -r ./src/images public/ "
+  },
+  "author": "Brett Tackaberry",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  }
+}
