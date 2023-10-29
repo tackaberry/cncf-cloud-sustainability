@@ -281,6 +281,14 @@ My journey to understanding how I can be a positive force for our world has lead
 
 ---
 
+<Layout color={DARK_GREEN}>
+
+# Top 10 things you can do to make the internet more sustainable
+
+</Layout>
+
+---
+
 <Layout>
 
 # 1. Use the cloud
@@ -321,10 +329,16 @@ Low-carbon energy means: clean (no emissions like nuclear), green (natural sourc
 
 <Layout>
 
-# 3. Optimize for energy efficiency
+# 3. Optimize for energy efficiency and carbon efficiency
 
 - the more you use a computer, the more efficient it becomes
 - an idle server has a carbon cost from both embedded carbon as well as inefficient utilization
+
+- Rightsizing, Autoscaling, and Autoscaling to zero, Serverless
+- Turn off what you don’t need, schedule workloads to run when power is cleanest
+
+- Use the most efficient hardware possible - ARM vs x86, GPUs, TPUs, ASICs, FPGAs - also upgrade to latest version
+
 
 </Layout>
 
@@ -332,11 +346,13 @@ Low-carbon energy means: clean (no emissions like nuclear), green (natural sourc
 
 <Layout>
 
-# 4. eBPF and KEPLER FTW
+# 4. Cluster Efficiency - eBPF and KEPLER FTW
 
 - eBPF, Cilium - used with K8s - brings control and observability enhancing security, performance, and networking
 - KEPLER - Kubernetes Energy Performance Label for Efficiency in Research - a tool to measure and optimize energy efficiency of Kubernetes clusters
 - Cloud Native Computing Foundation sandbox project
+
+</Layout>
 
 <Notes>
 
@@ -348,8 +364,120 @@ https://sustainable-computing.io/
 
 </Notes>
 
+---
+
+<Layout>
+
+# 5. Async and batch processing
+
+- Batch processing is more efficient than real-time processing
+- Event driven is more efficient than polling
+- Applies to front end and back end
 
 </Layout>
+
+<Notes>
+
+- bundling 10 processes will be more efficient than running 10 processes one at a time
+
+- consider this on the the front end as well - bundling requests to the server, or using websockets instead of polling - think of web front end polling a web api efery 10s vs using websockets vs using push notifications
+
+- I dont have to tell this crowd that event driven is more effective and just better, but it’s worth mentioning that it’s also more efficient.  Software polling is inefficient and wasteful.
+- as services are able to scale and fail independently, better resilience leads to more efficient use of resources
+
+- I might come back to this a few times but Failures result in a lot of wasted time and effort to fix and remediate.  The more resilient your system, the less time you spend fixing it, and the more time you spend building new features.  This is a win for everyone - and is more sustainable. 
+
+</Notes>
+
+---
+
+<Layout>  
+
+# 6. Security
+
+- Build security into your applications and services
+- Keep malicious traffic off your network
+- Keep software and dependencies up to date
+- Implement secure, ethical and sustainable data practices
+
+</Layout>
+
+<Notes>
+
+We're all aware of the amount of malicious traffic on the internet.  This traffic is not only a security risk, but it's also a waste of energy.  It's a waste of energy to process the traffic, to store logs of it, and it's a waste of energy to send it.  It's also a waste of energy as the user processes it, or endpoint security does what it has to.  This is why we need to build security into our applications and services.  The more we can do to prevent malicious traffic from reaching our services, the more efficient our systems will be.  This also reduces impact on users - from integrity of their data to availability of the services they rely on.  This is a win for everyone - and is more sustainable.
+
+Secondly, keeping software and dependencies up to date is a security best practice, but it's also a sustainability best practice.  The more up to date your software is, the more efficient it is.  This is because software is always getting more efficient.  
+
+And again, secure breaches and any sort of remediation takes time and resources away from being productive and building new features.  People are a carbon sink. The more time we spend building new features, the more "carbon efficient" as a system we are. 
+
+
+
+</Notes>
+
+---
+
+<Layout>
+
+# 7. Data practices
+
+</Layout>
+
+<Notes>
+
+Ethical data practices - respect the user, respect their data, respect their privacy, dont keep it longer than you need it, dont take collect more than you need, adhere to laws and regulations, be transparent about what you do with it, provide the user with control over the data you collect
+
+</Notes>
+
+
+---
+
+<Layout>
+
+# 8. Use Open Source Software
+
+- Open source software is more secure, more reliable, and more sustainable
+
+</Layout>
+
+<Notes>
+
+Open source software tends to remain in service much longer than proprietary software.  This is because it's more secure, more reliable, and more sustainable. And its more secure and more efficient because its open to scrutiny and review.
+
+If software is in service longer, then hardware can stay in service longer.  Closed software tends to be more tightly coupled to hardware, and is more likely to be retired when hardware is retired. Apple, for example, is notorious for this. In common cases the embodied carbon outweighs the carbon cost of utilization of a device. 
+
+It can also be refactored to be streamlined for precision tasks. Proprietrary software tends to be more bloated to accommodate a wider range of use cases.
+
+Keep fighting for open source.
+
+</Notes>
+
+---
+
+<Layout>
+
+
+# 9. Expand FinOps to include GreenOps
+
+</Layout>
+
+<Notes>
+
+</Notes>
+
+
+
+---
+
+<Layout>
+
+# 10. Frameworks are your friends
+
+</Layout>
+
+<Notes>
+
+</Notes>
+
 
 ---
 
@@ -357,13 +485,15 @@ https://sustainable-computing.io/
 
 # W3C Web Sustainability Guidelines
 
+- Launched Draft 1.0 in September 2023
+- Covering Design, Development, Infrastructure, and Business Strategy
+- 94 Guidelines, 232 Success Criteria
+- From the people that brought you WCAG
+- Join me Nov 15 at Ottawa JS Meetup
+
 </Layout>
 
 <Notes>
-
-Let's zoom back in a little bit and talk about some practical ways your work can have a positive impact on the environment.
-
-Let's talk about the W3C Web Sustainability Guidelines.
 
 
 </Notes>
@@ -372,231 +502,61 @@ Let's talk about the W3C Web Sustainability Guidelines.
 
 <Layout>
 
-### W3C launched Draft 1.0 of the Web Sustainability Guidelines in September 2023.
+# AWS WAF Sustainability Pillar
 
 </Layout>
-
-<Notes>
-
-The Web Sustainability Guidelines (WSG) 1.0 explains how to design and implement digital products and services that put people and the planet first. The guidelines are best practices based on measurable, evidence-based research; aimed at end-users, web workers, stakeholders, tool authors, educators, and policymakers.
-
-</Notes>
 
 ---
 
 <Layout>
 
-# Who is the W3C?
+# 11. [BONUS] Measure and experiment
 
-The World Wide Web Consortium (W3C) develops standards and guidelines to help everyone build a web based on the principles of accessibility, internationalization, privacy and security.
-
-</Layout>
-
-<Notes>
-
-I would hazard a guess most of you are at least aware of W3C or the world wide web consortium.  Not to diminish all their other work, but their Web Content Accessibility Guidelines are referenced all over the world.  The public sector team will know them well as all digital public services need to be WCAG compliant thru federal, provincial, and municipal regulations. Google has clear policies and tooling for accessibility, based on WCAG. 
-
-</Notes>
-
----
-
-<Layout light image={SlideAreas}>
-
-<SlideTitle>Areas</SlideTitle>
+- Carbon sense
+- Lighthouse
+- Website Carbon
+- Cloud Carbon Footprint
 
 </Layout>
 
-<Notes>
-
-The guidelines are great in a way that highlight a holistic view of concerns including more than just co2 - environmental impact is much more
-
-- they address power on both server and client
-e -waste - again both server and client
-Water, as it pertains to cooling, is an important concern
-Digital and digital transformation as a way to eliminate need for Paper and printing
-And also carbon traps - like you and me - and all the other factors that go in to producing digital products
-
-
-</Notes>
 
 ---
 
-<Layout light image={SlideMarket} >
-
-<SlideTitle>Audience</SlideTitle>
+<Layout>  
 
 
-</Layout>
+<Split>
 
-<Notes>
-
-
-The guidelines were written with specific audiences in mind:
+<Image src={Lighthouse} style={{ height: "350px", width: "600px" }} />
 
 
-They’re very practically useful for people in the industry. These people are us, and our customers.
+# Lighthouse
 
-But our work and our customers work, will, in-turn raise awareness. 
+- Google Chrome Dev Tools
+- Measure performance, accessibility, best practices, SEO, and PWA
 
-But we have to be mindful that standards will create basis for regulations. We saw it with WCAG and accessibility laws. As orgs build compliance to laws, we see it propagate into procurement policies.  Unlike accessibility, which ended up really having no teeth outside govt, I think we’re going to see sustainability-laws be a lot more stringent and impactful on the private sector. We know already sustainability is extremely important to our customers - perhaps lead in this case by private sector - they’re all going to get hit with sustainability laws.  Manufacturing, CPG, shipping laws all aside - we’re already seeing digital and IT sustainability laws emerge.
 
-</Notes>
-
----
-
-<Layout >
-
-# Four categories
-
-- **User experience design**: Research and ideation, journey design, content and assets, and quality assurance.
-- **Web development**: Development sustainability, code optimization, coherence, and security.
-- **Hosting, Infrastructure, and Systems**: Environment commissioning, minimizing environment and data, and minimizing human disruption.
-- **Business Strategy and Product Management**: Reporting, disclosure, strategy, and policies from both an organizational and website and product level.
-
-</Layout>
-
-<Notes>
-
-Let’s have a closer look at the guidelines. 
-
-They’re broken down into 4 categories:
-User experience design
-WEb development
-Hosting, Infrastructure, and Systems
-Business Strategy and Product Management
-
-I’ll go a little deeper into each one in just a minute. 
-
-</Notes>
-
----
-
-<Layout >
-
-# Stats
-
-- 94 Guidelines
-- 232 Success Criteria
-- many more resources and examples
+</Split>
 
 </Layout>
 
 ---
 
-<Layout light image={SlideComponents} >
-
-<SlideTitle>Components</SlideTitle>
-
-</Layout>
-
-<Notes>
-
-A guideline would read: Enable asynchronous processing and communication. 
-
-And this guideline has 2 success criteria:  Use batch processing, and perhaps run when power consumption would be at lower carbon-intensity- running in a predictable pattern keeps utilization optimized, reduces thrashing- avoids user-impact of slow downs and outages; and the second criterion is protocol usage - using more efficient, secure privacy -aware routes 
-
-Theres Impact, Effort, benefits. GRI reporting alignment.  Examples and resources. 
-
-On the reporting, GRI is the main, if not one of a few, global reporting standards for ESG metrics.  By aligning these standards with a global standard, organizations can use digital product reporting to roll up to org-level reporting.  And have real meaningful impact through aligning with these guidelines. 
-
-</Notes>
+<Layout>  
 
 
----
+<Split>
 
-<Layout color={DARK_BLUE}>
+<Image src={WebsiteCarbon} style={{ height: "450px", width: "500px" }} />
 
-# User Experience and Design
 
-## Research and ideation, journey design, content and assets, and quality assurance.
+# WebsiteCarbon.com
 
-- Research, consult, assess thoughtfully  and consider sustainability in early ideation
-- Build automated value regression testing into the solution
-- If you’re building apps or tools, there are a lot of guidelines for content and design considerations
+
+
+</Split>
 
 </Layout>
-
-<Notes>
-
-Example: 2.26 Analyze The Performance Of The Visitor Journey
-…ethically measure how efficient a visitor's experience is, … and reduce the energy burden of loading unnecessary page … only collect the data required to provide a streamlined and effective user-journey
-
-</Notes>
-
----
-
-<Layout color={DARK_GREEN}>
-
-# Web Development
-
-## Development sustainability, code optimization, coherence, and security.
-
-- Mostly speaks to client-side technologies, empowering customers to build and test with technologies like Lighthouse would be valuable
-- Building performance and sustainability testing into CI/CD, and operationalizing performance measurement
-- Building for security 
-
-https://bundlephobia.com/
-
-https://pkg-size.dev/
-
-</Layout>
-
-<Notes>
-
-Example: 3.17 Manage Dependencies Appropriately
-…JavaScript … can cause very high emissions in terms of CPU load due to the rendering process…  check for unused dependencies,  keep dependencies up to date
-
-
-</Notes>
-
-
----
-
-<Layout color={DARK_YELLOW}>
-
-# Hosting, Infrastructure, and Systems
-
-## Environment commissioning, minimizing environment and data, and minimizing human disruption.
-
-- Rightsizing, automation, batch processing
-- Sustainable data practices, only keeping what’s needed
-- Minimize transfer, use edge computing
-- Async processing and computing
-- Being carbon aware
-
-</Layout>
-
-<Notes>
-
-Example: 4.5 Limit Usage Of Additional Environments
-Decommission or switch off additional environments, such as testing, staging
-
-</Notes>
-
----
-
-<Layout color={DARK_RED}>
-
-# Business Strategy and Product Management
-
-## Reporting, disclosure, strategy, and policies from both an organizational and website and product level.
-
-- Speaks to the business of building and operating a digital product
-- Setting org-level sustainability goals
-- Implementing sustainability onboarding training or guidelines
-- Use open-source software
-
-</Layout>
-
-<Notes>
-
-Example: Set Sustainability Goals
-
-Example: 5.5 Estimate A Product Or Service's Environmental Impact
-Conduct a full life-cycle Analysis (LCA) based on the functional unit (ex. per workload, per API call, per user)
-Software Carbon Intensity considers power consumed (server and client) plus embedded carbon 
-
-</Notes>
 
 ---
 
