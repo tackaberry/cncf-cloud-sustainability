@@ -16,9 +16,9 @@ The top 10 best practices I outline in the talk are:
 6. Security
 7. Data practices
 8. Use Open Source Software
-9. Expand FinOps to include GreenOps
-10. Frameworks are your friends
-11. (BONUS) Measure and experiment
+9. CI/CD
+10. Measure and experiment
+11. Frameworks are your friends
 
 
 Slides deployed [here](http://cncf-cloud-sustainability.tackaberry.dev/).
@@ -26,16 +26,17 @@ Slides deployed [here](http://cncf-cloud-sustainability.tackaberry.dev/).
 
 ### Resources
 
-- [Green Software Foundation]()
-- [Electricity Maps]()
-- [Green Web Foundation]()
-- [W3C Web Sustainability Guidelines]()
-- [WebsiteCarbon.com]()
-- [Sustainable Web Design]()
-- [AWS Well-Architected Framework - Sustainability Pillar]()
-- [Cloud Carbon Footprint]()
-- [ClimateActionTech]()
-
+- [Green Software Foundation](https://greensoftware.foundation/)
+- [Electricity Maps](https://app.electricitymaps.com/map)
+- [Green Web Foundation](https://www.thegreenwebfoundation.org/)
+- [W3C Web Sustainability Guidelines](https://w3c.github.io/sustyweb/)
+- [Website Carbon Calculator](https://www.websitecarbon.com/)
+- [Sustainable Web Design](https://sustainablewebdesign.org/)
+- [AWS Well-Architected Framework - Sustainability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
+- [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/)
+- [ClimateActionTech](https://climateaction.tech/)
+- [CNCF Cloud Native Sustainability Week](https://tag-env-sustainability.cncf.io/cloud-native-sustainability-week/)
+- [TAG Environmental Sustainability 🌳🌍♻️](https://github.com/cncf/tag-env-sustainability)
 
 ### Related
 

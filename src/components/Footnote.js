@@ -18,7 +18,7 @@ const Div = styled.div`
   margin-left: 1em;
 `;
 
-export default ({ children, color }) => (
+export default ({ children }) => (
   <Div
     style={{
       position: "absolute",

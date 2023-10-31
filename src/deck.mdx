@@ -94,9 +94,16 @@ use technology make the world a better place
 
 </Layout>
 
+
+<Notes>
+
+In the not too distant past I ran RHOK and Tech4Good - as a way to bring tech and innovation to social sector. I also contributed to Ottawa Civic Tech. 
+
+</Notes>
+
 ---
 
-<Layout image={SlideJourney} >
+<Layout image={SlideJourney} color={WHITE}>
 
 <SlideTitle>My Journey</SlideTitle>
 
@@ -105,7 +112,7 @@ use technology make the world a better place
 
 <Notes>
 
-This talk is secretly an introduction to a part of me that I want to continue to explore and grow.  The context to this is important because these guidelines aren’t the whole story. 
+Over the last 3 years I adjusted my path slightly to focus my efforts and growth on understanding how I can contribute to the climate crisis. In addition to learning and working on tech that helps us better understand our climate, how to adapt to it, and mitigate climate-related risks,  I've also been working on how to make the internet and IT more sustainable.  This is what I'm going to talk about today. 
 
 </Notes>
 
@@ -116,6 +123,12 @@ This talk is secretly an introduction to a part of me that I want to continue to
 # Context
 
 </Layout>
+
+<Notes>
+
+First, our shared context. Our changing climate. 
+
+</Notes>
 
 ---
 
@@ -129,7 +142,7 @@ This talk is secretly an introduction to a part of me that I want to continue to
 
 <Notes>
 
-The Paris agreement gave us the threshold to restrict global warming to no more than 1.5 degrees Celsius to mitigate the worst impacts of climate change
+The Paris agreement gave us the threshold to restrict global warming to no more than 1.5 degrees Celsius to mitigate the worst impacts of climate change.
 
 </Notes>
 
@@ -147,7 +160,8 @@ The Paris agreement gave us the threshold to restrict global warming to no more 
 
 <Notes>
 
-The digital industry is responsible for between 2 and 5 % of global emissions	
+The digital industry is responsible for between 2 and 5 % of global emissions.  This is expected to grow to well over 10% by 2040.
+
 
 </Notes>
 
@@ -167,10 +181,12 @@ The digital industry is responsible for between 2 and 5 % of global emissions
 
 If the internet were a country it would be one of the top 5 polluters.
 
+This ICT consumption is going to increase and grow rapidly with the computation needs of AI, increased traffic from IoT, and the growth of the internet in general.
+
+
 </Notes>
 
 ---
-
 
 <Layout color={DARK_YELLOW} >
 
@@ -213,7 +229,7 @@ And what’s more, page size more than doubled in some cases.
 
 <Notes>
 
-My journey to understanding how I can be a positive force for our world has lead me here, working on how to make the internet and IT more sustainable.  But it isn’t my, or our, whole job - it’s a fundamental part - like security, or performance, or openess might be.  So, onwards. 
+My journey to understanding how I can be a positive force for our world has lead me here, working on how to make the internet and IT more sustainable.  But it isn’t my, or our, whole job - it’s a fundamental part - like security, or performance, or openess might be. 
 
 </Notes>
 
@@ -277,7 +293,17 @@ My journey to understanding how I can be a positive force for our world has lead
 - *Hardware Efficiency*: Use the least amount of embodied carbon possible
 - *Carbon Awareness*: Do more when the electricity is clean and less when it’s dirty
 
+Read more at [Green Software Foundation](https://greensoftware.foundation/)
+
 </Layout>
+
+<Notes>
+
+It starts with principles we have to adopt. Principles turn into patterns and patterns turn into practices. Practices without principles lose their meaning and value over time- practices with principles will get better with continuous improvement.
+
+Copilot - suggested I say "cargo culting" - which is defined as "the ritualistic imitation of the superficial actions of someone or something else that serve no real purpose"  
+
+</Notes>
 
 ---
 
@@ -289,25 +315,139 @@ My journey to understanding how I can be a positive force for our world has lead
 
 ---
 
-<Layout>
+<Layout color={DARK_RED}>
 
-# 1. Use the cloud
+# 1. Measure and experiment
 
-## Carbon intensity of cloud is 3x lower than on-prem
+- Measure consumption of your software
+- Carbon sense - GCP's carbon footprint tool
+- Cloud Carbon Footprint - Open source tool to measure carbon footprint of your cloud infrastructure
+- Expand FinOps to include GreenOps
+- Lighthouse - Google Chrome Dev Tools
+- Website Carbon - Measure the carbon footprint of your website
+
+
+
+</Layout>
+
+<Notes>
+
+If you're just getting started, your first step will be an assessment. You can't improve what you don't measure.   There are a number of tools that can help you understand the carbon impact of your software.  
+
+You might first start to look at CPU, memory, storage usage. Then you will want to take a step further to understand power consumption.
+
+Your cloud providers will have the rudiments of usage reporting and you will have already integrated this into your FinOps dashboard. You can take this a step further and integrate carbon reporting into your FinOps dashboard.  This is called GreenOps.  
+
+GCP has a simple tool called Carbon Sense that will give you a rough estimate of the carbon footprint of your GCP projects.  It's a great place to start. AWS carbon footprint tool is fairly basic too.
+
+Cloud Carbon Footprint is an open source tool that will give you a more detailed view of your cloud infrastructure.  It's a great place to start. It takes a bit of work to get it set up, but it's worth it. It works from Cost and Usage Reports (CUR) that are downloaded and transformed or you can integrate directly.  It will give you a detailed view of your cloud infrastructure and the carbon footprint of each component.  It will also give you a view of the carbon footprint of your cloud infrastructure over time.  This is a great tool to help you understand the impact of your cloud infrastructure and to help you make decisions about how to optimize it.
+
+</Notes>
+
+---
+
+<Layout color={DARK_RED}>  
+
+
+<Split>
+
+<Image src={Lighthouse} style={{ height: "350px", width: "600px" }} />
+
+
+# Lighthouse
+
+- Google Chrome Dev Tools
+- Measure performance, accessibility, best practices, SEO, and PWA
+
+
+</Split>
+
+</Layout>
+
+<Notes>
+
+On the client side...
+
+Lighthouse is a tool built into Google Chrome Dev Tools that will give you a view of the performance of your website.  It will give you a score for performance, accessibility, best practices, SEO, and PWA.  It will also give you a view of the carbon footprint of your website.  This is a great tool to help you understand the impact of your website and to help you make decisions about how to optimize it.
+
+</Notes>
+
+---
+
+<Layout color={DARK_RED}>  
+
+
+<Split>
+
+<Image src={WebsiteCarbon} style={{ height: "450px", width: "500px" }} />
+
+
+# WebsiteCarbon.com
+
+</Split>
+
+</Layout>
+
+<Notes>
+
+WebsiteCarbon.com is a tool that will give you a view of the carbon footprint of your website.  
+
+My tackaberry.dev site, as you saw on the lighthouse view in the last slide too, is set up well.  A SSG website, deployed to GCP Cloud Storage, with a CDN in front of it is a very efficient website.  
+
+</Notes> 
+
+---
+
+<Layout color={DARK_RED}>
+
+# Measuring Cluster Efficiency
+
+- eBPF, Cilium - used with K8s - brings control and observability enhancing security, performance, and networking
+- [KEPLER](https://sustainable-computing.io/) - Kubernetes Energy Performance Label for Efficiency in Research - a tool to measure and optimize energy efficiency of Kubernetes clusters
+
+- KubeGreen - Reduce CO2 footprint of your clusters
+
+- Cloud Native Computing Foundation sandbox project
+
+</Layout>
+
+<Notes>
+
+Kepler leverages eBPF programs to probe per-container energy consumption related to system counters and exports them as metrics. 
+
+KEPLER - using CPU performance counters and machine learning (ML) models to estimate power consumption of workloads running on Kubernetes clusters.
+
+KubeGreen - An operator to reduce CO2 footprint of your clusters by suspending idle pods, scaling down when possible
+
+</Notes>
+
+---
+
+<Layout color={DARK_BLUE}>
+
+# 2. Use the cloud
+
+## Carbon intensity (ton CO2-eq/workload) of cloud is 3x lower than on-prem
 
 <Footnote>
 
-(Siddik, Shabi, Marston “The environmental footprint of data centers in the United States” (2021))[https://vtechworks.lib.vt.edu/bitstream/handle/10919/109747/Siddik_2021_Environ._Res._Lett._16_064017.pdf]
+[Siddik, Shabi, Marston “The environmental footprint of data centers in the United States” (2021)](https://vtechworks.lib.vt.edu/bitstream/handle/10919/109747/Siddik_2021_Environ._Res._Lett._16_064017.pdf)
 
 </Footnote>
 
 </Layout>
 
+<Notes>
+
+The carbon intensity of the cloud is much lower because the computing workloads is much higher density per energy use.  Water intensity is also more than 5x lower.  This is because hyperscaler datacenters can be more efficient at cooling. 
+
+</Notes>
+
 ---
 
 <Layout>
 
-# 2. Choose a region for low-carbon energy and proximity to your users
+# 3. Spatial and temporal optimization for low-carbon 
 
 <Image src={ElectricityMaps} style={{ height: "600px", width: "1200px" }} />
 
@@ -321,7 +461,19 @@ https://app.electricitymaps.com/map
 
 <Notes>
 
-Low-carbon energy means: clean (no emissions like nuclear), green (natural sources like hydro), renewable (solar, wind)
+Carbon awareness is important. Low-carbon energy means energy that is derived using little to no carbon.
+
+Low-carbon energy includes: clean (no emissions like nuclear), green (natural sources like hydro), renewable (solar, wind)
+
+This screenshot is from ElectricutyMaps.com.  It shows the carbon intensity of electricity in real time.  
+
+Understanding carbon intensity of power means you can reduce carbon footprint by running workloads in regions with low carbon intensity.  This is called spatial optimization.  It also means you can reduce carbon footprint by running workloads when the carbon intensity is low.  This is called temporal optimization.
+
+there's a popular article from a few years ago, outlining how Google shifts compute workloads to follow the sun and follow the wind. This is a great example of temporal optimization.  But it's not just Google.  We all have the ability to do this.  We can schedule workloads to run when the electricity is cleanest. 
+
+https://blog.google/inside-google/infrastructure/data-centers-work-harder-sun-shines-wind-blows/
+
+We all know Quebec produces clean energy. it produces more than it can use and ships the remainder down south to the states.  what happens when it does that?  the states have to turn off their clean energy sources and turn on their dirty energy sources.  Its important to also build for energy efficiency - which brings us to #4. 
 
 </Notes>
 
@@ -329,7 +481,7 @@ Low-carbon energy means: clean (no emissions like nuclear), green (natural sourc
 
 <Layout>
 
-# 3. Optimize for energy efficiency and carbon efficiency
+# 4. Optimize for energy efficiency (and carbon efficiency)
 
 - the more you use a computer, the more efficient it becomes
 - an idle server has a carbon cost from both embedded carbon as well as inefficient utilization
@@ -339,32 +491,24 @@ Low-carbon energy means: clean (no emissions like nuclear), green (natural sourc
 
 - Use the most efficient hardware possible - ARM vs x86, GPUs, TPUs, ASICs, FPGAs - also upgrade to latest version
 
-
-</Layout>
-
----
-
-<Layout>
-
-# 4. Cluster Efficiency - eBPF and KEPLER FTW
-
-- eBPF, Cilium - used with K8s - brings control and observability enhancing security, performance, and networking
-- KEPLER - Kubernetes Energy Performance Label for Efficiency in Research - a tool to measure and optimize energy efficiency of Kubernetes clusters
-- Cloud Native Computing Foundation sandbox project
-
 </Layout>
 
 <Notes>
 
-KEPLER - using CPU performance counters and machine learning (ML) models to estimate power consumption of workloads running on Kubernetes clusters.
+The more you use a computer, the more efficient it becomes. Not only does it become more efficient, but it also becomes more carbon efficient.  This is because the embodied carbon of the hardware is amortized over the lifetime of the hardware.  An idle server has a carbon cost from both embedded carbon as well as inefficient utilization.  This is why it's important to rightsize your workloads, autoscale, and autoscale to zero - serverless is very efficient.  
 
-Kepler leverages eBPF programs to probe per-container energy consumption related to system counters and exports them as metrics. T
+Turn off what you don't need - dev tooling, staging sites can be turned off in teh evenening and on the weekends.  
 
-https://sustainable-computing.io/
+Also schedule workloads to run when power is cleanest.
+
+Consider, too, a multi-cloud scenario, consider carbon-aware workloads. If services were able to choose the right region, at the right time of the day, based on the carbon intensity of the electricity, we could reduce the carbon footprint of a cluster consdiderably 
+
+Lastly, using the right chip architecture is better for energy efficiency. First, upgrade to the latest verison as your cloud provider makes it available. Choose the right chip for the job, and don't overprovision. 
 
 </Notes>
 
 ---
+
 
 <Layout>
 
@@ -373,19 +517,19 @@ https://sustainable-computing.io/
 - Batch processing is more efficient than real-time processing
 - Event driven is more efficient than polling
 - Applies to front end and back end
+- Micro-services, automation and resilience
 
 </Layout>
 
 <Notes>
 
-- bundling 10 processes will be more efficient than running 10 processes one at a time
+Bundling many processes will be more efficient than running many processes one at a time
 
-- consider this on the the front end as well - bundling requests to the server, or using websockets instead of polling - think of web front end polling a web api efery 10s vs using websockets vs using push notifications
+Consider this on the the client side as well - bundling requests to the server, or using websockets instead of polling - think of web front end polling a web api efery 10s vs using websockets and having updates pushed to the client.
 
-- I dont have to tell this crowd that event driven is more effective and just better, but it’s worth mentioning that it’s also more efficient.  Software polling is inefficient and wasteful.
-- as services are able to scale and fail independently, better resilience leads to more efficient use of resources
+I dont have to tell this crowd that event driven is more effective and just better, but it’s worth mentioning that it’s also more efficient.  Software polling is inefficient and wasteful.
 
-- I might come back to this a few times but Failures result in a lot of wasted time and effort to fix and remediate.  The more resilient your system, the less time you spend fixing it, and the more time you spend building new features.  This is a win for everyone - and is more sustainable. 
+As services are able to scale and fail independently, better resilience leads to more efficient use of resources. There's no thrashing around.  This leads to less failures or outages. I might come back to this a few times but Failures result in a lot of wasted time and effort to fix and remediate.  The more resilient your system, the less time you spend fixing it, and the more time you spend building new features. 
 
 </Notes>
 
@@ -404,12 +548,11 @@ https://sustainable-computing.io/
 
 <Notes>
 
-We're all aware of the amount of malicious traffic on the internet.  This traffic is not only a security risk, but it's also a waste of energy.  It's a waste of energy to process the traffic, to store logs of it, and it's a waste of energy to send it.  It's also a waste of energy as the user processes it, or endpoint security does what it has to.  This is why we need to build security into our applications and services.  The more we can do to prevent malicious traffic from reaching our services, the more efficient our systems will be.  This also reduces impact on users - from integrity of their data to availability of the services they rely on.  This is a win for everyone - and is more sustainable.
+We're all aware of the amount of malicious traffic on the internet.  This traffic is not only a security risk, but it's also a waste of energy.  It's a waste of energy to process the traffic, to store logs of it, and it's a waste of energy to send it.  It's also a waste of energy as the user processes it, or endpoint security does what it has to.  The more we can do to prevent malicious traffic from reaching our services, the more efficient our systems will be.  By efficient I mean efficient in delivering value, scaling up to handle worthless traffic is wasteful. The part we already know is it has an impact on our users - from integrity of their data to availability of the services they rely on. 
 
-Secondly, keeping software and dependencies up to date is a security best practice, but it's also a sustainability best practice.  The more up to date your software is, the more efficient it is.  This is because software is always getting more efficient.  
+Secondly, keeping software and dependencies up to date is a security best practice, but it's also a sustainability best practice.  The more up to date your software is, the more efficient it is.  Software is always getting more efficient.  
 
 And again, secure breaches and any sort of remediation takes time and resources away from being productive and building new features.  People are a carbon sink. The more time we spend building new features, the more "carbon efficient" as a system we are. 
-
 
 
 </Notes>
@@ -420,11 +563,20 @@ And again, secure breaches and any sort of remediation takes time and resources 
 
 # 7. Data practices
 
+- Store data according to user needs
+- Reduce data duplication and redundancy
+
+
 </Layout>
 
 <Notes>
 
-Ethical data practices - respect the user, respect their data, respect their privacy, dont keep it longer than you need it, dont take collect more than you need, adhere to laws and regulations, be transparent about what you do with it, provide the user with control over the data you collect
+Failing to deliver on data privacy and security is a huge risk to your business and to your users.  It's also a huge waste of energy.  
+
+The more data you collect, the more energy it takes to store it, process it, and transmit it.  
+
+It starts with respecting the user, their data, and their privacy - dont collect data you dont need, and dont keep it longer than you need it.  Adhere to laws and regulations. Then be transparent about what you do with it, provide the user with control over the data you collect.
+
 
 </Notes>
 
@@ -443,9 +595,9 @@ Ethical data practices - respect the user, respect their data, respect their pri
 
 Open source software tends to remain in service much longer than proprietary software.  This is because it's more secure, more reliable, and more sustainable. And its more secure and more efficient because its open to scrutiny and review.
 
-If software is in service longer, then hardware can stay in service longer.  Closed software tends to be more tightly coupled to hardware, and is more likely to be retired when hardware is retired. Apple, for example, is notorious for this. In common cases the embodied carbon outweighs the carbon cost of utilization of a device. 
+If software is in service longer, then hardware can stay in service longer.  Closed software tends to be more tightly coupled to hardware, and is more likely to be retired when hardware is retired - or causing hardware to be retired earlier.  There are many common situations where the embodied carbon outweighs the carbon cost of utilization of a device. Theres lots of complaints how your iphone gets slower and slower with each update.
 
-It can also be refactored to be streamlined for precision tasks. Proprietrary software tends to be more bloated to accommodate a wider range of use cases.
+Open-source however can also be refactored to be streamlined for precision tasks. Proprietrary software tends to be more bloated to accommodate a wider range of use cases.  You see examples of lightweight images, or lightweight distributions or custom distributions - and these custom distributions are tailored perhaps to hardware or moreover for performance. 
 
 Keep fighting for open source.
 
@@ -456,17 +608,31 @@ Keep fighting for open source.
 <Layout>
 
 
-# 9. Expand FinOps to include GreenOps
+# 9. CI/CD
+
+- Automation and standardization remove waste and error
+- Avoid overprovisioning and underutilization
+- Tight feedback loops identify areas of improvement
+- Cache, cache, cache
+- Update dependencies regularly
+- Lightweight image, multi-stage builds
+- What kinds of testing and when 
+- 
 
 </Layout>
 
 <Notes>
 
+Automation and standardization remove waste and error.  You want to avoid overprovisioning and underutilization - even in CICS pipeline tooling.  Tight feedback loops identify areas of improvement. On front end CICD, for example, you can integrate lighthouse performance check on build or pre-commit, and if you give it a budget or limit, then you can fail the commit causing the developer to go back and fix the sustainability problem. 
+
+Cache, cache, cache. Its easy to overlook inefficient caching in the build process, but caching save a lot of compute and data transfer. 
+
+Multi-stage builds help you create lightweight images.  
+
 </Notes>
 
-
-
 ---
+
 
 <Layout>
 
@@ -475,6 +641,8 @@ Keep fighting for open source.
 </Layout>
 
 <Notes>
+
+Number 10, saving the best for last.  Use the sustainability guides and frameworks.  I have links for all these in the resources section on the repo. 
 
 </Notes>
 
@@ -495,6 +663,7 @@ Keep fighting for open source.
 
 <Notes>
 
+The W3C Web Sustainability Guidelines launched recently.  These are a holistic set of guidelines that cover full life cycle of buidling and operating a digital product form the Business Strategy, UX design, software to infrastructure.  They are from the people that brought you WCAG.  I'll be talking about these in more detail at the Ottawa JS meetup on Nov 15. 
 
 </Notes>
 
@@ -506,72 +675,21 @@ Keep fighting for open source.
 
 </Layout>
 
+<Notes>
+
+The AWS WAS Susty pillar is a great resource for understanding how to build sustainable software - with best practices on how to implement on AWS.  
+
+</Notes>
+
 ---
 
 <Layout>
 
-# 11. [BONUS] Measure and experiment
+# Read more and Get Involved
 
-- Carbon sense
-- Lighthouse
-- Website Carbon
-- Cloud Carbon Footprint
-
-</Layout>
-
-
----
-
-<Layout>  
-
-
-<Split>
-
-<Image src={Lighthouse} style={{ height: "350px", width: "600px" }} />
-
-
-# Lighthouse
-
-- Google Chrome Dev Tools
-- Measure performance, accessibility, best practices, SEO, and PWA
-
-
-</Split>
-
-</Layout>
-
----
-
-<Layout>  
-
-
-<Split>
-
-<Image src={WebsiteCarbon} style={{ height: "450px", width: "500px" }} />
-
-
-# WebsiteCarbon.com
-
-
-
-</Split>
-
-</Layout>
-
----
-
-<Layout light color={WHITE}>
-
-<Split>
-
-<Image src={CAT} style={{ height: "600px", width: "600px" }} />
-
-
-# ClimateAction.tech 
-
-A community of practice of tech workers that provides support and guidance for systemic change in our organisations and industries, to face the climate crisis.
-
-</Split>
+- CNCF - Cloud Native Sustainability Week and [#tag-environmental-sustainability](https://cloud-native.slack.com/archives/C03F270PDU6)
+- ClimateAction.tech - A community of practice of tech workers that provides support and guidance for systemic change in our organisations and industries, to face the climate crisis.
+- Check out the resources on the [repo]()
 
 </Layout>
 

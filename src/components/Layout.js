@@ -69,8 +69,12 @@ export default ({ children, color, image, light, half, twocolumn, leftTitle, ser
   if (image) {
     style = {
       ...style,
-      background: `url(${image}) 0% 50%`,
+      backgroundImage: `url(${image})`,
+      backgroundColor: color,
+      backgroundAttachment: "fixed",
+      backgroundPosition: "center",
       backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
     };
   }
 
