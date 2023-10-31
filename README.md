@@ -8,17 +8,16 @@ As cloud professionals, we have a unique opportunity and important responsibilit
 
 The top 10 best practices I outline in the talk are: 
 
-1. Use the cloud
-2. Choose a region for low-carbon energy and proximity to your users
-3. Optimize for energy efficiency and carbon efficiency
-4. Cluster Efficiency - eBPF and KEPLER FTW
-5. Async and batch processing
-6. Security
-7. Data practices
+1. Measure and experiment
+2. Use the cloud
+3. Spatial and temporal optimization for low-carbon
+4. Optimize for energy efficiency (and carbon efficiency)
+5. Use Async and batch processing
+6. Build for Security
+7. Use ethical data practices
 8. Use Open Source Software
-9. CI/CD
-10. Measure and experiment
-11. Frameworks are your friends
+9. Optimize CI/CD
+10. Frameworks are your friends
 
 
 Slides deployed [here](http://cncf-cloud-sustainability.tackaberry.dev/).
