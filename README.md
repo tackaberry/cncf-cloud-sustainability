@@ -1,8 +1,8 @@
 # Cloud Sustainability: A Practical Guide for Building a More Sustainable Internet 
 
-## [CNCF October 2023 Meeting](https://community.cncf.io/events/details/cncf-ottawa-presents-kubecon-recap-cncf-sustainability-karpenter-gke-autopilot-and-more/)
+**[CNCF October 2023 Meeting](https://community.cncf.io/events/details/cncf-ottawa-presents-kubecon-recap-cncf-sustainability-karpenter-gke-autopilot-and-more/)**
 
-**Thursday, November 2, 2023  @ 6 - 8PM**
+*Thursday, November 2, 2023  @ 6 - 8PM*
 
 As cloud professionals, we have a unique opportunity and important responsibility to make a significant impact on the sustainability of the internet. In this talk I outline key best practices that will help organizations reduce the environmental impact of their cloud usage. This talk skews towards cloud-native and open source concepts. 
 
