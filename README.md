@@ -1,6 +1,6 @@
 # Cloud Sustainability: A Practical Guide for Building a More Sustainable Internet 
 
-## CNCF October 2023 Meeting
+## [CNCF October 2023 Meeting](https://community.cncf.io/events/details/cncf-ottawa-presents-kubecon-recap-cncf-sustainability-karpenter-gke-autopilot-and-more/)
 
 **Thursday, November 2, 2023  @ 6 - 8PM**
 
