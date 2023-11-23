@@ -25,17 +25,17 @@ Slides deployed [here](http://cncf-cloud-sustainability.tackaberry.dev/).
 
 ### Resources
 
-- [Green Software Foundation](https://greensoftware.foundation/)
-- [Electricity Maps](https://app.electricitymaps.com/map)
-- [Green Web Foundation](https://www.thegreenwebfoundation.org/)
-- [W3C Web Sustainability Guidelines](https://w3c.github.io/sustyweb/)
-- [Website Carbon Calculator](https://www.websitecarbon.com/)
-- [Sustainable Web Design](https://sustainablewebdesign.org/)
-- [AWS Well-Architected Framework - Sustainability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
-- [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/)
-- [ClimateActionTech](https://climateaction.tech/)
-- [CNCF Cloud Native Sustainability Week](https://tag-env-sustainability.cncf.io/cloud-native-sustainability-week/)
-- [TAG Environmental Sustainability 🌳🌍♻️](https://github.com/cncf/tag-env-sustainability)
+- [Green Software Foundation](https://greensoftware.foundation/): A non-profit organization dedicated to building a trusted ecosystem of people and companies for creating sustainable digital products.
+- [Electricity Maps](https://app.electricitymaps.com/map): Live CO2 emissions of electricity consumption
+- [Green Web Foundation](https://www.thegreenwebfoundation.org/): A non-profit organization with a mission to speed up the transition to a green internet by informing and enabling organizations and people to make better, greener choices when they build and use the web.
+- [W3C Web Sustainability Guidelines](https://w3c.github.io/sustyweb/): A set of guidelines for building a more sustainable web.
+- [Website Carbon Calculator](https://www.websitecarbon.com/): A tool to help you measure the carbon emissions of your website.
+- [Sustainable Web Design](https://sustainablewebdesign.org/): A website dedicated to helping people build a more sustainable web.
+- [AWS Well-Architected Framework - Sustainability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html): A framework for building a sustainable cloud architecture.
+- [Cloud Carbon Footprint](https://www.cloudcarbonfootprint.org/): A tool to help you measure the carbon emissions of your cloud usage.
+- [ClimateActionTech](https://climateaction.tech/): A community of tech professionals using our skills, expertise and platforms to support solutions to the climate crisis.
+- [CNCF Cloud Native Sustainability Week](https://tag-env-sustainability.cncf.io/cloud-native-sustainability-week/): A week of events focused on sustainability in cloud native computing.
+- [TAG Environmental Sustainability 🌳🌍♻️](https://github.com/cncf/tag-env-sustainability): The environmental sustainability working group of the CNCF Technical Advisory Group (TAG).
 
 ### Print version
 
