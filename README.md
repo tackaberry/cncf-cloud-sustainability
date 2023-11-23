@@ -2,7 +2,7 @@
 
 **[CNCF October 2023 Meeting](https://community.cncf.io/events/details/cncf-ottawa-presents-kubecon-recap-cncf-sustainability-karpenter-gke-autopilot-and-more/)**
 
-*Thursday, November 2, 2023  @ 6 - 8PM*
+*Thursday, November 28, 2023  @ 6 - 8PM*
 
 As cloud professionals, we have a unique opportunity and important responsibility to make a significant impact on the sustainability of the internet. In this talk I outline key best practices that will help organizations reduce the environmental impact of their cloud usage. This talk skews towards cloud-native and open source concepts. 
 
@@ -36,6 +36,14 @@ Slides deployed [here](http://cncf-cloud-sustainability.tackaberry.dev/).
 - [ClimateActionTech](https://climateaction.tech/)
 - [CNCF Cloud Native Sustainability Week](https://tag-env-sustainability.cncf.io/cloud-native-sustainability-week/)
 - [TAG Environmental Sustainability 🌳🌍♻️](https://github.com/cncf/tag-env-sustainability)
+
+### Print version
+
+To export a deck as PDF, use the website-pdf CLI. Start the MDX Deck dev server, then run the following command to create a PDF:
+
+```bash
+npx website-pdf http://localhost:8000/print -o deck.pdf
+```
 
 ### Related
 

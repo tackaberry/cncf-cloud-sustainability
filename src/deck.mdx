@@ -33,11 +33,11 @@ import SlideAreas from "./images/slide-areas.svg";
 import SlideMarket from "./images/slide-market.svg";
 import SlideComponents from "./images/slide-components.svg";
 import CAT from "./images/climate-action-tech.png";
-import CatJourney from "./images/cat-journey.png";
 import Lighthouse from "./images/lighthouse.png";
 import W3C from "./images/w3c.png";
 import WebsiteCarbon from "./images/websitecarbon.png";
 import ElectricityMaps from "./images/electricity-maps.png";
+import QrCode from "./images/qrcode.png";
 
 <Footer>
 
@@ -55,7 +55,14 @@ import ElectricityMaps from "./images/electricity-maps.png";
 | Option + O                         | Toggle Overview Mode  |
 | Option + G                         | Toggle Grid Mode      |
 
+
+<div style={{display:"flex", marginTop:"50px", padding:"50px"}}>
+
 [This presentation on github](https://github.com/tackaberry/cncf-cloud-sustainability)
+
+<Image src={QrCode} style={{ marginLeft:"50px", height: "200px", width: "200px" }} />  
+
+</div>
 
 </Layout>
 
@@ -67,11 +74,30 @@ import ElectricityMaps from "./images/electricity-maps.png";
 
 ### For CNCF Ottawa
 
-### November 2, 2023
+### November 28, 2023
 
 ## Brett Tackaberry, Principal Architect, Google Cloud Canada
 
 </Layout>
+
+---
+
+<Layout color={DARK_GREEN}>
+
+# Cloud Sustainability
+
+</Layout>
+
+<Notes>
+
+All jobs are climate jobs. 
+
+I want to help you understand how your work as engineers can have a positive impact on the environment. 
+
+Im going to start off with a little bit of my journey, the context, and then we’ll get into the top ten things you can do make your cloud more sustainable.
+
+
+</Notes>
 
 ---
 
@@ -97,7 +123,12 @@ use technology make the world a better place
 
 <Notes>
 
-In the not too distant past I ran RHOK and Tech4Good - as a way to bring tech and innovation to social sector. I also contributed to Ottawa Civic Tech. 
+
+I'm Brett Tackaberry. 
+
+I’m a principal architect at Google Cloud Canada.  I help people do awesome things with technology.   And right now, Im helping govt and the public sector do more in the cloud. 
+
+Over my career I've spent lot of time building community helping to bring technology to the social sector.  I ran hackathons, ran tech4good, contributed to civic tech. This was and is important to me. 
 
 </Notes>
 
@@ -112,7 +143,25 @@ In the not too distant past I ran RHOK and Tech4Good - as a way to bring tech an
 
 <Notes>
 
-Over the last 3 years I adjusted my path slightly to focus my efforts and growth on understanding how I can contribute to the climate crisis. In addition to learning and working on tech that helps us better understand our climate, how to adapt to it, and mitigate climate-related risks,  I've also been working on how to make the internet and IT more sustainable.  This is what I'm going to talk about today. 
+More recently I have been spending my time finding ways to put my effort in to helping the climate crisis. 
+
+When I was working at a company in town called Rebel, I started to introduce sustainability and green concepts into our offering. If you're not familiar we were a web hosting company, amongst other things. 
+
+We made a few decisions that would result in less carbon footprint. 
+
+For example, when AWS launched in Montreal, we launched new locations and set the default to Canada. 
+
+Montreal data centres are powered with green energy - so, this had an impact. 
+
+This kicked off more green initiatives with the team.
+
+For me, it inspired me to really evaluate how I can use my experience to work on climate.  
+
+
+I dove right in, learned a tonne, I moved to work with a company building enivronment and civic focused apps, and yes, now at google. But along the way contributing more to how we can build to a more sustainable internet.  
+
+
+I'm not an expert, but I'm going to share what I've learned so far.
 
 </Notes>
 
@@ -130,6 +179,7 @@ First, our shared context. Our changing climate.
 
 </Notes>
 
+
 ---
 
 <Layout color={GREEN} >
@@ -142,26 +192,9 @@ First, our shared context. Our changing climate.
 
 <Notes>
 
-The Paris agreement gave us the threshold to restrict global warming to no more than 1.5 degrees Celsius to mitigate the worst impacts of climate change.
+The Paris agreement gave us the threshold to restrict global warming to no more than 1.5 degrees Celsius to mitigate the worst impacts of climate change
 
-</Notes>
-
-
----
-
-
-<Layout color={BLUE} >
-
-# The Climate Context
-
-## <Icon name="looks_two" /> Emissions growth
-
-</Layout>
-
-<Notes>
-
-The digital industry is responsible for between 2 and 5 % of global emissions.  This is expected to grow to well over 10% by 2040.
-
+So, we have to act now
 
 </Notes>
 
@@ -173,47 +206,34 @@ The digital industry is responsible for between 2 and 5 % of global emissions.  
 
 # The Climate Context
 
-## <Icon name="looks_3" /> Carbon Footprint of ICT
+## <Icon name="looks_two" /> Carbon Footprint of ICT is Subtantial
 
 </Layout>
 
 <Notes>
 
+The digital industry is responsible for between 2 and 5 % of global emissions. 
+
 If the internet were a country it would be one of the top 5 polluters.
-
-This ICT consumption is going to increase and grow rapidly with the computation needs of AI, increased traffic from IoT, and the growth of the internet in general.
-
 
 </Notes>
 
 ---
+
 
 <Layout color={DARK_YELLOW} >
 
 # The Climate Context
 
-## <Icon name="looks_4" /> Continued Growth 
+## <Icon name="looks_3" />Our Industry is Growing
 
 </Layout>
 
 <Notes>
+
+And with massive growth in AI, IoT,  we'll see it grow to well over 10% within the next 10 years. 
 
 Since 2010, the number of internet users has more than doubled. Global traffic has increased by 25 times. 
-
-</Notes>
-
----
-
-
-<Layout color={DARK_PINK} >
-
-# The Climate Context
-
-## <Icon name="looks_5" /> More Content
-
-</Layout>
-
-<Notes>
 
 And what’s more, page size more than doubled in some cases. 
 
@@ -223,15 +243,12 @@ And what’s more, page size more than doubled in some cases.
 
 <Layout color={BLACK} image={BG1} >
 
-# Our Story
+# Our Challenge
+
+Our challenge is to divorce the growth of the usage of IT from its impact on the environment.
+
 
 </Layout>
-
-<Notes>
-
-My journey to understanding how I can be a positive force for our world has lead me here, working on how to make the internet and IT more sustainable.  But it isn’t my, or our, whole job - it’s a fundamental part - like security, or performance, or openess might be. 
-
-</Notes>
 
 ---
 
@@ -479,7 +496,7 @@ Consider, too, a multi-cloud scenario, consider carbon-aware workloads. If servi
 
 ---
 
-<Layout>
+<Layout color={DARK_YELLOW}>
 
 # 4. Optimize for energy efficiency (and carbon efficiency)
 
@@ -499,18 +516,16 @@ The more you use a computer, the more efficient it becomes. Not only does it bec
 
 Turn off what you don't need - dev tooling, staging sites can be turned off in teh evenening and on the weekends.  
 
-Also schedule workloads to run when power is cleanest.
+Per the last slide - you can Also schedule workloads to run when power is cleanest.
 
-
-
-Lastly, using the right chip architecture is better for energy efficiency. First, upgrade to the latest verison as your cloud provider makes it available. Choose the right chip for the job, and don't overprovision. 
+Lastly, using the right chip architecture is better for energy efficiency. First, upgrade to the latest verison as your cloud provider makes it available. Choose the right chip for the job, and don't overprovision. ASICs, FPGAs are more efficient because they're application specific. GPUs, TPUs are more efficient for ML workloads.
 
 </Notes>
 
 ---
 
 
-<Layout>
+<Layout color={DARK_PINK}>
 
 # 5. Async and batch processing
 
@@ -535,7 +550,7 @@ As services are able to scale and fail independently, better resilience leads to
 
 ---
 
-<Layout>  
+<Layout color={DARK_RED}>  
 
 # 6. Security
 
@@ -559,7 +574,7 @@ And again, secure breaches and any sort of remediation takes time and resources 
 
 ---
 
-<Layout>
+<Layout color={DARK_BLUE}>
 
 # 7. Data practices
 
@@ -583,7 +598,7 @@ It starts with respecting the user, their data, and their privacy - dont collect
 
 ---
 
-<Layout>
+<Layout color={DARK_GREEN}>
 
 # 8. Use Open Source Software
 
@@ -605,7 +620,7 @@ Keep fighting for open source.
 
 ---
 
-<Layout>
+<Layout color={DARK_YELLOW}>
 
 
 # 9. Optimize CI/CD
@@ -633,7 +648,7 @@ Multi-stage builds help you create lightweight images.
 ---
 
 
-<Layout>
+<Layout color={DARK_PINK}>
 
 # 10. Frameworks are your friends
 
@@ -668,33 +683,23 @@ The W3C Web Sustainability Guidelines launched recently.  These are a holistic s
 
 ---
 
-<Layout>
-
-# AWS WAF Sustainability Pillar
-
-</Layout>
-
-<Notes>
-
-The AWS WAS Susty pillar is a great resource for understanding how to build sustainable software - with best practices on how to implement on AWS.  
-
-</Notes>
-
----
-
-<Layout>
+<Layout color={DARK_BLUE}>
 
 # Read more and Get Involved
 
 - CNCF - Cloud Native Sustainability Week and [#tag-environmental-sustainability](https://cloud-native.slack.com/archives/C03F270PDU6)
 - ClimateAction.tech - A community of practice of tech workers that provides support and guidance for systemic change in our organisations and industries, to face the climate crisis.
-- Check out the resources on the [repo]()
+- Check out the resources on the [repo](https://github.com/tackaberry/cncf-cloud-sustainability)
 
 </Layout>
 
 ---
 
 <Layout color="BLACK">
+
+<Split>
+
+<Image src={QrCode} style={{ height: "400px", width: "400px" }} /> 
 
 # Thank you 🙏
 
@@ -703,5 +708,7 @@ The AWS WAS Susty pillar is a great resource for understanding how to build sust
 - https://github.com/tackaberry
 
 - [This Presentation](https://cncf-cloud-sustainability.tackaberry.dev/)
+
+</Split>
 
 </Layout>
