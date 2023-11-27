@@ -90,7 +90,7 @@ import QrCode from "./images/qrcode.png";
 
 <Notes>
 
-All jobs are climate jobs. 
+All jobs are climate jobs. We're going to start there. 
 
 I want to help you understand how your work as engineers can have a positive impact on the environment. 
 
@@ -231,11 +231,12 @@ If the internet were a country it would be one of the top 5 polluters.
 
 <Notes>
 
-And with massive growth in AI, IoT,  we'll see it grow to well over 10% within the next 10 years. 
-
 Since 2010, the number of internet users has more than doubled. Global traffic has increased by 25 times. 
 
 And what’s more, page size more than doubled in some cases. 
+
+And with massive growth in AI, IoT,  we'll see it grow to well over 10% within the next 10 years. 
+
 
 </Notes>
 
@@ -247,8 +248,13 @@ And what’s more, page size more than doubled in some cases.
 
 Our challenge is to divorce the growth of the usage of IT from its impact on the environment.
 
-
 </Layout>
+
+<Notes>
+
+Our challenge is to divorce the growth of the usage of IT from its impact on the environment.
+
+</Notes>
 
 ---
 
@@ -318,7 +324,10 @@ Read more at [Green Software Foundation](https://greensoftware.foundation/)
 
 It starts with principles we have to adopt. Principles turn into patterns and patterns turn into practices. Practices without principles lose their meaning and value over time- practices with principles will get better with continuous improvement.
 
-Copilot - suggested I say "cargo culting" - which is defined as "the ritualistic imitation of the superficial actions of someone or something else that serve no real purpose"  
+- *Energy Efficiency*: Consume the least amount of electricity possible
+- *Hardware Efficiency*: Use the least amount of embodied carbon possible
+- *Carbon Awareness*: Do more when the electricity is clean and less when it’s dirty
+
 
 </Notes>
 
@@ -355,63 +364,11 @@ You might first start to look at CPU, memory, storage usage. Then you will want 
 
 Your cloud providers will have the rudiments of usage reporting and you will have already integrated this into your FinOps dashboard. You can take this a step further and integrate carbon reporting into your FinOps dashboard.  This is called GreenOps.  
 
-GCP has a simple tool called Carbon Sense that will give you a rough estimate of the carbon footprint of your GCP projects.  It's a great place to start. AWS carbon footprint tool is fairly basic too.
+GCP has a simple tool called Carbon Sense that will give you a rough estimate of the carbon footprint of your GCP projects.  Other cloud providers have similar tools.  These are a great place to start.  You would have to do a little work to operationalize sustainability concepts in the cloud. 
 
-Cloud Carbon Footprint is an open source tool that will give you a more detailed view of your cloud infrastructure.  It's a great place to start. It takes a bit of work to get it set up, but it's worth it. It works from Cost and Usage Reports (CUR) that are downloaded and transformed or you can integrate directly.  It will give you a detailed view of your cloud infrastructure and the carbon footprint of each component.  It will also give you a view of the carbon footprint of your cloud infrastructure over time.  This is a great tool to help you understand the impact of your cloud infrastructure and to help you make decisions about how to optimize it.
-
-</Notes>
-
----
-
-<Layout color={DARK_RED}>  
-
-
-<Split>
-
-<Image src={Lighthouse} style={{ height: "350px", width: "600px" }} />
-
-
-# Lighthouse
-
-- Google Chrome Dev Tools
-- Measure performance, accessibility, best practices, SEO, and PWA
-
-
-</Split>
-
-</Layout>
-
-<Notes>
-
-On the client side...
-
-Lighthouse is a tool built into Google Chrome Dev Tools that will give you a view of the performance of your website.  It will give you a score for performance, accessibility, best practices, SEO.  This is a great tool to help you understand the impact of your website and to help you make decisions about how to optimize it.
+Cloud Carbon Footprint is an open source tool that will give you a more detailed view of your cloud infrastructure.   It takes a bit of work to get it set up, but it's worth it. It works from Cost and Usage Reports (CUR) that are downloaded and transformed or you can integrate directly.  It will give you a detailed view of your cloud infrastructure and the carbon footprint of each component.  It will also give you a view of the carbon footprint of your cloud infrastructure over time.  This is a great tool to help you understand the impact of your cloud infrastructure and to help you make decisions about how to optimize it.
 
 </Notes>
-
----
-
-<Layout color={DARK_RED}>  
-
-
-<Split>
-
-<Image src={WebsiteCarbon} style={{ height: "450px", width: "500px" }} />
-
-
-# WebsiteCarbon.com
-
-</Split>
-
-</Layout>
-
-<Notes>
-
-WebsiteCarbon.com is a tool that will give you a view of the carbon footprint of your website.  
-
-My tackaberry.dev site, as you saw on the lighthouse view in the last slide too, is set up well.  A SSG website, deployed to GCP Cloud Storage, with a CDN in front of it is a very efficient website.  
-
-</Notes> 
 
 ---
 
@@ -430,9 +387,9 @@ My tackaberry.dev site, as you saw on the lighthouse view in the last slide too,
 
 <Notes>
 
-Kepler leverages eBPF programs to probe per-container energy consumption related to system counters and exports them as metrics. 
-
 KEPLER - using CPU performance counters and machine learning (ML) models to estimate power consumption of workloads running on Kubernetes clusters.
+
+Kepler leverages eBPF programs to probe per-container energy consumption related to system counters and exports them as metrics. 
 
 KubeGreen - An operator to reduce CO2 footprint of your clusters by suspending idle pods, scaling down when possible
 
@@ -456,7 +413,7 @@ KubeGreen - An operator to reduce CO2 footprint of your clusters by suspending i
 
 <Notes>
 
-The carbon intensity of the cloud is much lower because the computing workloads is much higher density per energy use.  Water intensity is also more than 5x lower.  This is because hyperscaler datacenters can be more efficient at cooling. 
+The carbon intensity of the cloud is much lower because the computing workloads is much higher density per energy use.  Hyperscalers are obviously highly incented to run more efficiently.   Water intensity is also more than 5x lower.  
 
 </Notes>
 
